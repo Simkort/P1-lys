@@ -27,6 +27,7 @@ int main(){
   double largestValue = 0.0;
   int i, o, g, H, k = 0;
 
+
   findTilstande(state);
   prob(state, prWait, prChange);
   getReward(state, reward);
@@ -73,7 +74,7 @@ int main(){
       V_forrige = values[i]; 
     }
   }
-
+int aheirheaeirjaw;
   for (i = 0; i < ANTAL_TILSTANDE; i++) {
     printf("---------> %lf <----------\n", values[i]); 
   }
@@ -215,4 +216,3 @@ double traffic_strategy(tilstand state[], double prAction[ANTAL_TILSTANDE][ANTAL
   printf("%lf\n", max);
   return max;
 }
-
